@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIC Class Finder</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mapStyle.css">
+    <script src="./mapScript.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <main id="main">
+        <h1>Room Finder</h1>
+        <div class="mapinput-container">
+            <label class="searchLabels" for="building-Input">Enter Building Name</label>
+            <input type="search" placeholder="Building name.." list="building-list" class="building-Search" id="building-input" spellcheck='false' autocorrect='off' required>
+            <datalist id="building-list">
+                <option>Example Building</option>
+            </datalist>
+        </div>
+        <div class="mapinput-container">
+            <label class="searchLabels" for="roomnumber-input">Enter Room Number</label>
+            <input id="roomnumber-input" type="search" list="roomlist" placeholder="Pick a room...">
+            <datalist id="roomlist">
+            </datalist>
+        </div>
+        <div class="mapinput-container">
+            <label  for="colorPicker">Choose Highlight color:</label>
+            <input type="color" id="colorPicker" name="colorPicker" value="#000000">
+        </div>
+        <div>
+            <div id="floorplan-wrapper">
+                <img id="floorplan" alt="Map image for selected building and according floor will be displayed here.">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

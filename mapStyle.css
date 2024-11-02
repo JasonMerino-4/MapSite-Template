@@ -1,0 +1,28 @@
+#floorplan{
+    width: 100%;
+    border-radius: 10px;
+    min-width: 600px;
+}
+
+#floorplan-wrapper{
+    position: relative;
+    width: 90vw;
+    max-width: 1000px;
+    margin: 10px auto;
+    overflow: scroll;
+    margin-bottom: 50px;
+}
+
+.node {
+    mix-blend-mode:difference;
+    position: absolute;
+    background-color: white;
+    border: none;  
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+
+
